@@ -1,6 +1,6 @@
-# Project Name
+# Sonder
 
-> Pithy project description
+> Sonder is a neighborhood discovery walking app for IOS and Android built on React Native.
 
 ## Team
 
@@ -18,17 +18,12 @@
 1. [Team](#team)
 1. [Contributing](#contributing)
 
-## Usage
-
-> Some usage instructions
-
 ## Requirements
 
 - Node 0.10.x
 - Redis 2.6.x
 - Postgresql 9.1.x
-- etc
-- etc
+- React-native 0.38.0
 
 ## Development
 
@@ -37,14 +32,26 @@
 From within the root directory:
 
 ```sh
-sudo npm install -g bower
 npm install
-bower install
+react-native link
+```
+
+iOS dependencies:
+- *FB Auth*
+```sh
+npm run ios:install-fb-auth
+```
+
+- *Mapbox*<br />
+Follow instructions [here](https://github.com/mapbox/react-native-mapbox-gl/blob/master/ios/install.md)<br />
+In addition: Add to 'Sonder => Build Settings => Search Paths => Framework Search Paths the below.
+```sh
+$(PROJECT_DIR)/../node_modules/react-native-mapbox-gl
 ```
 
 ### Roadmap
 
-View the project roadmap [here](https://waffle.io/MapReactor/MapReactor)
+View the project roadmap [here](https://waffle.io/MapReactor/Sonder)
 
 
 ## Contributing
